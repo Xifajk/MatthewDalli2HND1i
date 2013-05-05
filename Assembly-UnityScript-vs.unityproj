@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{1753851C-AE59-909A-15AB-E3FFE34BC5A0}</ProjectGuid>
+	<ProjectGuid>{547705A2-D5DA-BF07-8E96-884CF3AC4F7B}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -48,7 +48,9 @@
      <Compile Include="Assets\ScriptControllers\AlienLaserController.js" />
      <Compile Include="Assets\ScriptControllers\BorderController.js" />
      <Compile Include="Assets\ScriptControllers\LaserController.js" />
+     <Compile Include="Assets\ScriptControllers\NameController.js" />
      <Compile Include="Assets\ScriptControllers\SpaceShipController.js" />
+     <Compile Include="Assets\ScriptControllers\SwarmController.js" />
      <Compile Include="Assets\ScriptGenerators\AlienGenerator.js" />
      <Compile Include="Assets\ScriptGenerators\PowerUpGenerator.js" />
   </ItemGroup>
