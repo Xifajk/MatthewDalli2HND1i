@@ -44,15 +44,17 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\ScriptControllers\AlienController.js" />
-     <Compile Include="Assets\ScriptControllers\AlienLaserController.js" />
-     <Compile Include="Assets\ScriptControllers\BorderController.js" />
-     <Compile Include="Assets\ScriptControllers\LaserController.js" />
-     <Compile Include="Assets\ScriptControllers\NameController.js" />
-     <Compile Include="Assets\ScriptControllers\SpaceShipController.js" />
-     <Compile Include="Assets\ScriptControllers\SwarmController.js" />
-     <Compile Include="Assets\ScriptGenerators\AlienGenerator.js" />
-     <Compile Include="Assets\ScriptGenerators\PowerUpGenerator.js" />
+     <Compile Include="Assets\Controllers\AlienController.js" />
+     <Compile Include="Assets\Controllers\BorderController.js" />
+     <Compile Include="Assets\Controllers\EnemyLaserController.js" />
+     <Compile Include="Assets\Controllers\GameOverController.js" />
+     <Compile Include="Assets\Controllers\LaserController.js" />
+     <Compile Include="Assets\Controllers\MenuController.js" />
+     <Compile Include="Assets\Controllers\NameController.js" />
+     <Compile Include="Assets\Controllers\SpaceshipController.js" />
+     <Compile Include="Assets\Controllers\SwarmController.js" />
+     <Compile Include="Assets\Generators\AlienGenerator.js" />
+     <Compile Include="Assets\Generators\PowerUpGenerator.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
