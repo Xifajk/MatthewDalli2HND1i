@@ -28,7 +28,8 @@ function OnGUI()
 		GUILayout.BeginArea (Rect (Screen.width/2-100,Screen.height/2-50,200,200));
         username = GUILayout.TextField (username);
         		
-		if(GUILayout.Button("Start")){
+		if(GUILayout.Button("Start"))
+		{
 			if(username == "Enter Your Name Here")
 			{
 				checkname = false;				

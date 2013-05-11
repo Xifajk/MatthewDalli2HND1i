@@ -2,6 +2,8 @@
 
 var laserSpeed:int;
 
+static var bossHealth: int = 10;
+
 function Start ()
 {
 
@@ -16,7 +18,7 @@ function OnTriggerEnter(other:Collider)
 {
 	if(other.gameObject.tag=="alien")
 	{
-		SpaceshipController.score++;
+		SpaceshipController.score++;;
 		//destroy the alien
 		Destroy(other.gameObject);
 		//destroy the laser
@@ -25,7 +27,17 @@ function OnTriggerEnter(other:Collider)
 		//retrieves the variable from the mentioned javascript
 		AlienGenerator.aliencount--;
 		//reduces the variable from when the laser hits the alien
+	} else 
+	{
+		if(other.gameObject.tag=="boss")
+		{
+			SpaceshipController.score = SpaceshipController.score + 5;
+			bossHealth--;
+			Destroy(this.gameObject);
+			SpaceshipController.shotshit++;
+		}
 	}
+	
 }
 
 function OnBecameInvisible()

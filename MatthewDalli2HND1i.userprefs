@@ -1,13 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Controllers\SpaceshipController.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Controllers\GameOverController.js">
     <Files>
-      <File FileName="Assets\Controllers\SpaceshipController.js" Line="36" Column="3" />
-      <File FileName="Assets\Generators\AlienGenerator.js" Line="30" Column="1" />
-      <File FileName="Assets\Controllers\NameController.js" Line="41" Column="2" />
-      <File FileName="Assets\Generators\PowerUpGenerator.js" Line="9" Column="2" />
-      <File FileName="Assets\Controllers\GameOverController.js" Line="24" Column="25" />
-      <File FileName="Assets\Controllers\MenuController.js" Line="27" Column="22" />
+      <File FileName="Assets\Controllers\YouWinController.js" Line="28" Column="22" />
+      <File FileName="Assets\Controllers\BossController.js" Line="15" Column="24" />
+      <File FileName="Assets\Controllers\SpaceshipController.js" Line="94" Column="2" />
+      <File FileName="Assets\Controllers\LaserController.js" Line="37" Column="35" />
+      <File FileName="Assets\Controllers\GameOverController.js" Line="26" Column="28" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

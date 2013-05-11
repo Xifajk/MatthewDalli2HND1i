@@ -24,7 +24,7 @@ function OnGUI()
 	GUILayout.BeginArea (Rect (Screen.width/2-100,Screen.height/2-50,200,200));  
 	if(GUILayout.Button("START GAME"))
 	{
-		Application.LoadLevel(7);
+		Application.LoadLevel(1);
 	}   
 	
 	if(GUILayout.Button("HELP"))
