@@ -4,6 +4,8 @@ var laserSpeed:int;
 
 static var bossHealth: int = 10;
 
+var detonator: GameObject;
+
 function Start ()
 {
 
@@ -21,6 +23,7 @@ function OnTriggerEnter(other:Collider)
 		SpaceshipController.score++;;
 		//destroy the alien
 		Destroy(other.gameObject);
+		Instantiate(detonator, transform.position, Quaternion.identity);
 		//destroy the laser
 		Destroy(this.gameObject);
 		SpaceshipController.shotshit++;

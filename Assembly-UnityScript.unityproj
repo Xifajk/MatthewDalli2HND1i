@@ -49,17 +49,21 @@
      <Compile Include="Assets\Controllers\BossController.js" />
      <Compile Include="Assets\Controllers\EnemyLaserController.js" />
      <Compile Include="Assets\Controllers\GameOverController.js" />
+     <Compile Include="Assets\Controllers\HealthBoostController.js" />
      <Compile Include="Assets\Controllers\HelpController.js" />
      <Compile Include="Assets\Controllers\HighScoreController.js" />
      <Compile Include="Assets\Controllers\LaserController.js" />
      <Compile Include="Assets\Controllers\MenuController.js" />
      <Compile Include="Assets\Controllers\NameController.js" />
      <Compile Include="Assets\Controllers\SpaceshipController.js" />
+     <Compile Include="Assets\Controllers\SpeedBoostController.js" />
      <Compile Include="Assets\Controllers\SwarmController.js" />
      <Compile Include="Assets\Controllers\YouWinController.js" />
      <Compile Include="Assets\Detonator Explosion Framework\Sample Supporting Emitters\Detonator Spray Helper.js" />
      <Compile Include="Assets\Detonator Explosion Framework\TestScene\DetonatorTest.js" />
      <Compile Include="Assets\Generators\AlienGenerator.js" />
+     <Compile Include="Assets\Generators\HealthGenerator.js" />
+     <Compile Include="Assets\Generators\SpeedGenerator.js" />
      <None Include="Assets\Detonator Explosion Framework\Resources\Detonator\Textures\HeatDistort.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

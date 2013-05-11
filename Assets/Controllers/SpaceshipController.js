@@ -1,17 +1,18 @@
 #pragma strict
 
-var laserSlot:Rigidbody;
 static var score:int;
 static var totalscore: int;
 static var health:int; //static meaning the only one in the game
 static var shotsfired:int;
 static var shotshit:int;
 
-
+var laserSlot:Rigidbody;
 var level:int;
 var levelcount: int;
 var SpaceshipColours:Material[];
 var customSkin : GUISkin;
+var checkpowerup: boolean;
+var speed: int;
 
 function Start ()
 {
@@ -19,6 +20,7 @@ function Start ()
 	shotsfired = 0;
 	shotshit = 0;
 	score = 0;
+	checkpowerup = false;
 	//for the spaceship to have the material
 	this.renderer.material = SpaceshipColours[0];
 	DontDestroyOnLoad(this.gameObject);
@@ -27,7 +29,7 @@ function Start ()
 function Update ()
 {
 	BorderController.EnableBorders(this.transform);
-	transform.Translate(Vector3.right * 15 * Input.GetAxis("Horizontal") * Time.deltaTime);
+	transform.Translate(Vector3.right * speed * Input.GetAxis("Horizontal") * Time.deltaTime);
 	
 	//shoot the laser
 	if(Input.GetKeyDown(KeyCode.Space))
@@ -39,11 +41,16 @@ function Update ()
 	if (health <= 0)
 	{
 		Destroy(GameObject.FindGameObjectWithTag("spaceship"));
-		Application.LoadLevel(8);
-		
-		
+		Application.LoadLevel(8);		
 	}
-	
+	else
+	{
+		if (health > 1000)
+		{
+			health = 1000;
+		}
+	}
+		
 	if (levelcount < 6){ //so it won't give an error when it'll go to the boss level
 		var myAlienGenerator:AlienGenerator;
 		myAlienGenerator=GameObject.FindGameObjectWithTag("swarm").GetComponent(AlienGenerator);
@@ -100,6 +107,25 @@ function OnTriggerEnter(other:Collider)
 		//player was hit, reduced health and changed colour
 		this.renderer.material = SpaceshipColours[1];
 		health--;
+	}
+	
+	if(other.gameObject.tag=="healthboost")
+	{
+		if (health < 1000)
+		{
+			health = health + 5;
+		}
+		Destroy(GameObject.FindGameObjectWithTag("healthboost"));
+	}
+	
+	if(other.gameObject.tag=="speedboost")
+	{
+		Destroy(GameObject.FindGameObjectWithTag("speedboost"));
+		checkpowerup = true;
+		speed = 100;
+		yield WaitForSeconds(5);
+		checkpowerup = false;
+		speed = 15;
 	}
 }
 
