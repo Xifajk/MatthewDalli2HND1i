@@ -34,13 +34,11 @@ function OnGUI()
 	GUILayout.FlexibleSpace();
 	GUILayout.Label("Shoots Laser");
 	GUILayout.EndHorizontal();
-	
-	GUILayout.EndHorizontal();
+
 	if(GUILayout.Button("MAIN MENU"))
 	{
 		Application.LoadLevel(0);
 	}   
 	
 	GUILayout.EndArea();
-	
 }
