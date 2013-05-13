@@ -20,7 +20,6 @@ function Update ()
 	
 }
 
-
 static function EnableBorders(object:Transform)
 {
 	//if the object stays the left of the screen

@@ -16,10 +16,11 @@ var speed: int;
 
 function Start ()
 {
-	health = 1000;
+	health = 10;
 	shotsfired = 0;
 	shotshit = 0;
 	score = 0;
+	totalscore = 0;
 	checkpowerup = false;
 	//for the spaceship to have the material
 	this.renderer.material = SpaceshipColours[0];
@@ -45,9 +46,9 @@ function Update ()
 	}
 	else
 	{
-		if (health > 1000)
+		if (health > 10)
 		{
-			health = 1000;
+			health = 10;
 		}
 	}
 		
@@ -68,7 +69,7 @@ function Update ()
 		if (LaserController.bossHealth == 0)
 		{
 			Destroy(GameObject.FindGameObjectWithTag("spaceship"));
-			Application.LoadLevel(0);
+			Application.LoadLevel(9);
 		}
 	}
 }
@@ -115,6 +116,7 @@ function OnTriggerEnter(other:Collider)
 		{
 			health = health + 5;
 		}
+		score += 2;
 		Destroy(GameObject.FindGameObjectWithTag("healthboost"));
 	}
 	
@@ -126,6 +128,7 @@ function OnTriggerEnter(other:Collider)
 		yield WaitForSeconds(5);
 		checkpowerup = false;
 		speed = 15;
+		score += 2;
 	}
 }
 

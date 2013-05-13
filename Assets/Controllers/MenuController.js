@@ -24,12 +24,17 @@ function OnGUI()
 	GUILayout.BeginArea (Rect (Screen.width/2-100,Screen.height/2-50,200,200));  
 	if(GUILayout.Button("START GAME"))
 	{
-		Application.LoadLevel(1);
+		Application.LoadLevel(7);
 	}   
 	
 	if(GUILayout.Button("HELP"))
 	{
-		Application.LoadLevel(8);
+		Application.LoadLevel(11);
+	}
+	
+	if(GUILayout.Button("HIGH SCORE"))
+	{
+		Application.LoadLevel(10);
 	}
 	
 	if(GUILayout.Button("EXIT"))

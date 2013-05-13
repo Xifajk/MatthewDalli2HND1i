@@ -6,7 +6,7 @@ var customSkin : GUISkin;
 
 function Start ()
 {
-
+	username = "Enter Your Name Here";
 }
 
 function Update ()
