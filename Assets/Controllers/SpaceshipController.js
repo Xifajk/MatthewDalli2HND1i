@@ -9,7 +9,6 @@ static var shotshit:int;
 var laserSlot:Rigidbody;
 var level:int;
 var levelcount: int;
-var SpaceshipColours:Material[];
 var customSkin : GUISkin;
 var checkpowerup: boolean;
 var speed: int;
@@ -22,8 +21,6 @@ function Start ()
 	score = 0;
 	totalscore = 0;
 	checkpowerup = false;
-	//for the spaceship to have the material
-	this.renderer.material = SpaceshipColours[0];
 	DontDestroyOnLoad(this.gameObject);
 }
 
@@ -105,8 +102,6 @@ function OnTriggerEnter(other:Collider)
 {
 	if(other.gameObject.tag=="enemylaser")
 	{
-		//player was hit, reduced health and changed colour
-		this.renderer.material = SpaceshipColours[1];
 		health--;
 	}
 	
@@ -130,10 +125,4 @@ function OnTriggerEnter(other:Collider)
 		speed = 15;
 		score += 2;
 	}
-}
-
-function OnTriggerExit(other:Collider)
-{
-	//when the laser leaves the spaceship, set the colour back to green
-	this.renderer.material = SpaceshipColours[0];
 }
