@@ -17,7 +17,7 @@ function generateAliens(rows:int, columns:int)
 		for(var counter=0; counter<columns; counter++)
 		{
 			//y position of swarm
-			tempAlien = Instantiate(alien,Vector3(counter*2,ypos-(rowscounter*1.5),1),Quaternion.identity); //x position, y position - spacing * 1.5
+			tempAlien = Instantiate(alien,Vector3(counter*3,ypos-(rowscounter*2),1),Quaternion.identity); //x position, y position - spacing * 1.5
 			//place this object INSIDE the swarm
 			tempAlien.transform.parent = this.transform;
 			aliencount++; //counts all the aliens

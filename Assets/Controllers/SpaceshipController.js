@@ -15,7 +15,7 @@ var speed: int;
 
 function Start ()
 {
-	health = 10;
+	health = 1000;
 	shotsfired = 0;
 	shotshit = 0;
 	score = 0;
@@ -43,9 +43,9 @@ function Update ()
 	}
 	else
 	{
-		if (health > 10)
+		if (health > 1000)
 		{
-			health = 10;
+			health = 1000;
 		}
 	}
 		

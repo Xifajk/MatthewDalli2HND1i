@@ -3,7 +3,7 @@
 function Start () {
 
 	transform.position.x = Random.Range(BorderController.rightmost, BorderController.leftmost);
-	transform.position.y = -9;
+	transform.position.y = -7;
 }
 
 function Update () {
