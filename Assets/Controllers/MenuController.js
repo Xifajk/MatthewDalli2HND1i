@@ -29,11 +29,6 @@ function OnGUI()
 	
 	if(GUILayout.Button("HELP"))
 	{
-		Application.LoadLevel(11);
-	}
-	
-	if(GUILayout.Button("HIGH SCORE"))
-	{
 		Application.LoadLevel(10);
 	}
 	

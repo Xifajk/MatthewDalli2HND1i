@@ -9,21 +9,18 @@ static var shotshit:int;
 var laserSlot:Rigidbody;
 var level:int;
 var levelcount: int;
-var SpaceshipColours:Material[];
 var customSkin : GUISkin;
 var checkpowerup: boolean;
 var speed: int;
 
 function Start ()
 {
-	health = 10;
+	health = 100;
 	shotsfired = 0;
 	shotshit = 0;
 	score = 0;
 	totalscore = 0;
 	checkpowerup = false;
-	//for the spaceship to have the material
-	this.renderer.material = SpaceshipColours[0];
 	DontDestroyOnLoad(this.gameObject);
 }
 
@@ -46,9 +43,9 @@ function Update ()
 	}
 	else
 	{
-		if (health > 10)
+		if (health > 100)
 		{
-			health = 10;
+			health = 100;
 		}
 	}
 		
@@ -56,7 +53,7 @@ function Update ()
 		var myAlienGenerator:AlienGenerator;
 		myAlienGenerator=GameObject.FindGameObjectWithTag("swarm").GetComponent(AlienGenerator);
 	
-		if(myAlienGenerator.aliencount==0)
+		if(myAlienGenerator.aliencount<=0)
 		{
 			level = Application.loadedLevel;
 			levelcount = level+1;
@@ -81,7 +78,7 @@ function OnGUI()
 	shotsmissed = shotsfired - shotshit;
 	
 	GUI.skin = customSkin;
-	GUILayout.BeginArea(Rect(0,0,1024,40));
+	GUILayout.BeginArea(Rect(0,0,Screen.width,40));
 	GUILayout.BeginHorizontal();
 	GUILayout.Label("Name: "+NameController.username);
 	GUILayout.FlexibleSpace();
@@ -105,14 +102,12 @@ function OnTriggerEnter(other:Collider)
 {
 	if(other.gameObject.tag=="enemylaser")
 	{
-		//player was hit, reduced health and changed colour
-		this.renderer.material = SpaceshipColours[1];
 		health--;
 	}
 	
 	if(other.gameObject.tag=="healthboost")
 	{
-		if (health < 1000)
+		if (health < 100)
 		{
 			health = health + 5;
 		}
@@ -130,10 +125,4 @@ function OnTriggerEnter(other:Collider)
 		speed = 15;
 		score += 2;
 	}
-}
-
-function OnTriggerExit(other:Collider)
-{
-	//when the laser leaves the spaceship, set the colour back to green
-	this.renderer.material = SpaceshipColours[0];
 }

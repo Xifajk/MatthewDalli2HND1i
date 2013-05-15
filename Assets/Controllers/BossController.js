@@ -12,7 +12,7 @@ function Start ()
 {
 	//the laser shoots from 1 second to 3 seconds
 	var delay:float;
-	for (var i=0; i <= 100; i++)
+	for (var i=0; i <= 10; i++)
 	{
 	
 		delay = Random.Range(0.5,1.0);

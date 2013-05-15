@@ -5,7 +5,7 @@ var uvAnimationTileX = 4; //Here you can place the number of columns of your she
  
 var uvAnimationTileY = 1; //Here you can place the number of rows of your sheet. 
                           //The above sheet has 1
-var framesPerSecond = 10.0;
+var framesPerSecond = 10;
  
 function Update () {
  

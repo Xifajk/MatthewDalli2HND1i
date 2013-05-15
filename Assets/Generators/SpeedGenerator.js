@@ -11,7 +11,7 @@ function Start ()
 
 function generateSpeedBoost()
 {
-	Instantiate(SpeedBoost,Vector3(-9,0,1),Quaternion.identity);
+	Instantiate(SpeedBoost,Vector3(-5,0,1),Quaternion.identity);
 }
 
 function Update () 

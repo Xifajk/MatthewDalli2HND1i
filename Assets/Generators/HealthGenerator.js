@@ -10,7 +10,7 @@ function Start () {
 function generateHealthBoost()
 {
 
-	Instantiate(HealthBoost,Vector3(-9,0,1),Quaternion.identity);
+	Instantiate(HealthBoost,Vector3(-5,0,1),Quaternion.identity);
 }
 
 function Update()

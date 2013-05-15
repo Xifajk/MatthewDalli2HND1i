@@ -1,14 +1,6 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Controllers\HelpController.js">
-    <Files>
-      <File FileName="Assets\Controllers\HelpController.js" Line="44" Column="1" />
-      <File FileName="Assets\Controllers\SpaceshipController.js" Line="1" Column="1" />
-      <File FileName="Assets\Controllers\NameController.js" Line="1" Column="1" />
-      <File FileName="Assets\Controllers\MenuController.js" Line="1" Column="1" />
-      <File FileName="Assets\Controllers\HighScoreController.js" Line="1" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
