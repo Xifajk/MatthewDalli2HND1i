@@ -1,15 +1,10 @@
 ﻿<Properties>
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench />
-=======
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Controllers\DisplayHighScoreController.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Controllers\SpaceshipController.js">
     <Files>
-      <File FileName="Assets\Controllers\DisplayHighScoreController.js" Line="32" Column="25" />
+      <File FileName="Assets\Controllers\SpaceshipController.js" Line="129" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
->>>>>>> 0d10278381d211078d99f403bbec94dcb0b12809
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

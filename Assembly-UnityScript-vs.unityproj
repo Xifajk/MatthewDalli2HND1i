@@ -48,7 +48,6 @@
      <Compile Include="Assets\Controllers\AnimationController.js" />
      <Compile Include="Assets\Controllers\BorderController.js" />
      <Compile Include="Assets\Controllers\BossController.js" />
-     <Compile Include="Assets\Controllers\DisplayHighScoreController.js" />
      <Compile Include="Assets\Controllers\EnemyLaserController.js" />
      <Compile Include="Assets\Controllers\GameOverController.js" />
      <Compile Include="Assets\Controllers\HealthBoostController.js" />
@@ -59,7 +58,6 @@
      <Compile Include="Assets\Controllers\SpaceshipController.js" />
      <Compile Include="Assets\Controllers\SpeedBoostController.js" />
      <Compile Include="Assets\Controllers\SwarmController.js" />
-     <Compile Include="Assets\Controllers\WriteHighScoreController.js" />
      <Compile Include="Assets\Controllers\YouWinController.js" />
      <Compile Include="Assets\Detonator Explosion Framework\Sample Supporting Emitters\Detonator Spray Helper.js" />
      <Compile Include="Assets\Detonator Explosion Framework\TestScene\DetonatorTest.js" />
@@ -67,7 +65,6 @@
      <Compile Include="Assets\Generators\HealthGenerator.js" />
      <Compile Include="Assets\Generators\SpeedGenerator.js" />
      <None Include="Assets\Detonator Explosion Framework\Resources\Detonator\Textures\HeatDistort.shader" />
-     <None Include="Assets\Highscores.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
