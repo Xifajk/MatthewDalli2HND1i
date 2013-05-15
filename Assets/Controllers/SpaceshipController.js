@@ -15,7 +15,11 @@ var speed: int;
 
 function Start ()
 {
+<<<<<<< HEAD
 	health = 100;
+=======
+	health = 1000;
+>>>>>>> 0d10278381d211078d99f403bbec94dcb0b12809
 	shotsfired = 0;
 	shotshit = 0;
 	score = 0;
@@ -43,9 +47,15 @@ function Update ()
 	}
 	else
 	{
+<<<<<<< HEAD
 		if (health > 100)
 		{
 			health = 100;
+=======
+		if (health > 1000)
+		{
+			health = 1000;
+>>>>>>> 0d10278381d211078d99f403bbec94dcb0b12809
 		}
 	}
 		
@@ -125,4 +135,8 @@ function OnTriggerEnter(other:Collider)
 		speed = 15;
 		score += 2;
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 0d10278381d211078d99f403bbec94dcb0b12809
